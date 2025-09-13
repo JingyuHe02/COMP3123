@@ -1,0 +1,11 @@
+{
+  "name": "week02_tur_m",
+  "version": "1.0.0",
+  "description": "node_js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jingyu He",
+  "license": "ISC"
+}
