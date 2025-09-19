@@ -1,10 +1,10 @@
-// ===== Exercise 1: Rewrite using ES6 =====
+// ===== Exercise 1
 const printNumbers = (arr) => {
   for (const n of arr) console.log(`Number: ${n}`);
 };
 printNumbers([1, 2, 3, 4, 5]);
 
-// ===== Exercise 2: Capitalize first letter (destructuring + spread) =====
+// ===== Exercise 2
 const capitalize = (s = "") => {
   const [first = "", ...rest] = s;
   return first.toUpperCase() + rest.join("");
@@ -12,16 +12,16 @@ const capitalize = (s = "") => {
 console.log(capitalize("hello"));   // Hello
 console.log(capitalize("world"));   // World
 
-// ===== Exercise 3: map + capitalize on colors =====
+// ===== Exercise 3
 const colors = ["red", "green", "blue"];
 const capitalizedColors = colors.map(capitalize);
 console.log(capitalizedColors); // ["Red", "Green", "Blue"]
 
-// ===== Exercise 4: filter values >= 20 =====
+// ===== Exercise 4
 const filterTwenty = (arr) => arr.filter((n) => n >= 20);
 console.log(filterTwenty([5, 18, 23, 42, 7, 99])); // [23, 42, 99]
 
-// ===== Exercise 5: reduce → sum & product =====
+// ===== Exercise 5
 const sum = (arr) => arr.reduce((a, b) => a + b, 0);
 const product = (arr) => arr.reduce((a, b) => a * b, 1);
 
@@ -35,7 +35,7 @@ const sumAndProduct = (arr) => ({
 });
 console.log(sumAndProduct([1, 2, 3, 4])); // { sum: 10, product: 24 }
 
-// ===== Exercise 6: ES6 classes (Car → Sedan) with super =====
+// ===== Exercise 6
 class Car {
   constructor(model, year) {
     this.model = model;
@@ -57,7 +57,7 @@ class Sedan extends Car {
 }
 
 const car1 = new Car("Toyota", 2018);
-console.log(car1.info()); // "Toyota (2018)"
+console.log(car1.info());
 
 const sedan1 = new Sedan("Honda Accord", 2020, 20000);
-console.log(sedan1.info()); // "Honda Accord (2020) - Balance: $20000"
+console.log(sedan1.info()); 
