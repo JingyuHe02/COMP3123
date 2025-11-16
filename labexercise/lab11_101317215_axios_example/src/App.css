@@ -1,0 +1,98 @@
+.app-container {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+}
+
+.user-list-header {
+  margin: 30px auto 0 auto;
+  width: 90%;
+  background-color: #169b37; /* green bar */
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.person-list-container {
+  width: 90%;
+  margin: 0 auto 30px auto;
+}
+
+.user-card {
+  background-color: #0097a7; /* teal block */
+  margin-top: 15px;
+  color: #000000;
+}
+
+.user-card-title-bar {
+  background-color: #007c91; /* darker teal bar */
+  color: #ffffff;
+  padding: 5px 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.user-card-body {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 25px;
+}
+
+.user-avatar-section {
+  width: 180px;
+  text-align: center;
+  margin-right: 25px;
+}
+
+.user-avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.details-button {
+  background-color: #007bff;
+  border: none;
+  color: #ffffff;
+  padding: 6px 18px;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.user-info-section {
+  flex: 1;
+  font-size: 14px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.loading,
+.error {
+  width: 90%;
+  margin: 30px auto;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .user-card-body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .user-avatar-section {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .user-info-section {
+    width: 100%;
+  }
+}
